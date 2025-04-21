@@ -1,27 +1,30 @@
-# Programming-in-C
-
+Programming in C
 ## Lecture 1: Introduction - Part I (July 31, 2024)
 
 **Topic:** Introduction to C Programming
 
 **1. Why Learn Programming Languages (PL)?**
+* 
     *   **Interaction with Machines (Computers):** Humans need a way to give instructions to computers.
     *   **Problem Solving:** Computers excel at complex calculations and repetitive tasks much faster and more accurately than humans (e.g., large multiplications, route finding).
     *   **Automation:** Create programs (sequences of instructions) to automate tasks (e.g., Google Maps finding a route, ATM dispensing cash).
     *   **Computers are "Dumb":** They only follow instructions precisely as given.
 
 **2. Levels of Programming Languages:**
+* 
     *   **Machine Language (0s and 1s):** Directly understood by the computer's hardware. Very difficult for humans to read, write, or debug. Prone to errors (mistakenly flipping a bit).
     *   **Assembly Language:** Uses mnemonics (like ADD, MOV, SUB) which are more human-readable than binary. Requires an *Assembler* to translate it into machine code. Still machine-dependent and low-level.
     *   **High-Level Languages (HLL):** (e.g., C, C++, Java, Python) Use English-like words and syntax (e.g., `a + b`). Much easier for humans to write, read, and maintain. Requires a *Translator* (Compiler or Interpreter) to convert to machine code. Logic is transferable across different HLLs.
 
 **3. Why C Programming Specifically?**
+* 
     *   Foundation for many other languages (C++, Java, C#).
     *   Used extensively in system programming (Operating Systems, Compilers, Embedded Systems).
     *   Provides low-level memory access capabilities.
     *   Efficient and performs well.
 
 **4. Course Structure (Approximate Lecture Allocation):**
+* 
     *   Data Types and Operators: 6-7 Lectures
     *   Control Flow Statements: 6 Lectures
     *   Functions & Storage Classes: 5 Lectures
@@ -32,6 +35,7 @@
     *   *Total: ~32-33 Lectures*
 
 **5. Basic Requirements for Programming:**
+* 
     *   **Need to Learn a PL:** Understand its syntax and grammar (like learning English grammar).
     *   **Write Programs:** Create sequences of instructions following the PL's rules.
     *   **Translator:** Use a Compiler (like GCC for C) or Interpreter to convert the human-readable program (source code) into machine-readable code (executable).
@@ -39,12 +43,14 @@
     *   **Interface/Abstraction:** Hiding complex implementation details (e.g., how `printf` actually displays text on screen) allows programmers to focus on the logic.
 
 **6. Tools Needed:**
+* 
     *   **C-Related Software:** (e.g., Turbo C, Dev C++, VS Code with C extension, GCC)
     *   This software typically includes:
         *   **Compiler:** Translates C code to machine code.
         *   **Library:** Pre-written code for common functions (like `printf` in `stdio.h`).
 
 **7. Key Concepts Introduced:**
+* 
     *   **Program:** A sequence of instructions written in a PL.
     *   **Compiler/Interpreter:** Translators from HLL to machine code.
     *   **Library:** Collection of pre-defined functions. `#include <stdio.h>` brings in the Standard Input/Output library.
@@ -54,6 +60,7 @@
     *   **Data Type:** Specifies the kind of data a variable can hold (e.g., integer, character, floating-point) and the operations that can be performed on it.
 
 **8. Course Logistics:**
+* 
     *   Timings mentioned: 4:00 PM - 5:30 PM, 5:30 PM - 6:30 PM, 5 PM - 10 PM (Context unclear, likely related to different batches or subjects).
     *   C and DS (Data Structures) ~ 10 Marks (presumably in GATE).
     *   CDSA (Compiler Design, System Software, Architecture?) ~ 18-72 Marks (Range seems very wide, needs clarification).
@@ -65,23 +72,28 @@
 **Topic:** Introduction - II (Variables, Data Types, Identifiers)
 
 **1. Essential Programming Language Facilities:**
+* 
     *   Take input (e.g., from keyboard).
     *   Display output (e.g., to screen).
 
 **2. User vs. Programmer:**
+* 
     *   **User:** Interacts with the application's interface (e.g., buttons, text boxes on an ATM). Doesn't need to know the underlying programming.
     *   **Programmer:** Writes the set of programs (code) that make the application work. Needs to understand the PL.
     *   **Abstraction:** Hiding implementation details from the user (and often from other programmers using a module) is crucial.
 
 **3. Software and File Types:**
+* 
     *   Different software is used to create different file types (PowerPoint -> .pptx, MS Word -> .doc).
     *   C programs (.c files) require C-related software (Compiler + Libraries) like Turbo C, Dev C, VS Code, Code::Blocks.
 
 **4. Compiler and Library:**
+* 
     *   **Compiler:** Translates the `.c` source file into machine code.
     *   **Library:** Contains pre-written, pre-compiled code for standard functions (e.g., `printf`, `scanf`). The `#include <stdio.h>` directive tells the compiler to include information about the standard input/output library, allowing the use of functions like `printf`.
 
 **5. Variables:**
+* 
     *   **Concept:** Named memory locations used to store data that can change during program execution. Like containers (Tea, Rice, Sugar).
     *   **Analogy:** Retrieving items from storage requires knowing *where* they are. In memory, we need a way to refer to data locations.
     *   **Identifier:** The name given to a variable (e.g., `a`, `sum`, `userName`). It acts as a label for the memory location.
@@ -89,6 +101,7 @@
     *   **Data:** The value stored in the variable (e.g., 10, 3.14, 'c').
 
 **6. Data:**
+* 
     *   Information processed by computers.
     *   Can be broadly categorized:
         *   **Numeric:** Numbers.
@@ -97,6 +110,7 @@
         *   **Text:** Characters, strings, addresses, email, names. (Internally represented numerically, e.g., using ASCII).
 
 **7. Data Types:**
+* 
     *   Tells the compiler:
         *   What kind of data a variable will hold (e.g., integer, float, character).
         *   How much memory to allocate for it.
@@ -119,6 +133,7 @@
             *   Enumeration (`enum`)
 
 **8. Integer Data Types:**
+* 
     *   Used to store whole numbers (+ve, -ve, 0).
     *   Variations: `short int`, `int`, `long int`, `long long int`. These differ in the range of values they can store (and potentially the memory size they occupy, though this can be system-dependent).
     *   **Modifiers:**
@@ -126,6 +141,7 @@
         *   `unsigned`: Can store only non-negative values (zero and positive).
 
 **9. Number Systems & Memory:**
+* 
     *   **Decimal (Base 10):** Uses digits 0-9.
     *   **Binary (Base 2):** Uses digits 0-1. Computers store data in binary.
         *   1 bit (binary digit) can be 0 or 1 (2 possible values).
@@ -141,6 +157,7 @@
         *   `signed int`: -2³¹ to +2³¹ - 1 (~ -2 billion to +2 billion)
 
 **10. `printf` Function:**
+* 
     *   Used to display output on the screen.
     *   `printf("text");` - Prints the literal text.
     *   `printf("format_specifier", variable);` - Prints the value of the variable according to the format specifier.
@@ -161,16 +178,19 @@
 **Topic:** Data Types (Integer types, `printf`, `scanf`, Character types)
 
 **1. Data Types Recap:**
+* 
     *   **Primitive:** Integer, Character, Floating Point, Void, Boolean.
     *   **Derived:** Arrays, Pointers, Strings.
     *   **User-Defined:** Struct, Union, Typedef, Enum.
 
 **2. Integer Types (`int`, `short`, `long`, `long long`):**
+* 
     *   Store whole numbers.
     *   Can be `signed` (default) or `unsigned`.
     *   Size (and thus range) can vary by system/compiler but C standard guarantees minimum ranges and relative sizes (`short` <= `int` <= `long` <= `long long`).
 
 **3. Range Examples (Assuming 2-byte `int`):**
+* 
     *   `unsigned int`: 0 to 65535
     *   `signed int`: -32768 to +32767
     *   **Wrap-around:** If you exceed the maximum value, it wraps around (e.g., `unsigned int i = 65535; i++;` might result in `i` being 0). If you go below the minimum, it wraps the other way (e.g., `signed int i = -32768; i--;` might result in `i` being 32767).
@@ -179,12 +199,14 @@
         *   `signed int i = 32768; printf("%d", i);` -> Prints -32768. The bit pattern for 32768 (which requires 16 bits if the sign bit is included) is interpreted as the most negative signed number.
 
 **4. `scanf` Function:**
+* 
     *   Used to read formatted input from the keyboard.
     *   Syntax: `scanf("format_specifier", &variable_address);`
     *   Requires the **address** of the variable (using the `&` address-of operator) to know where in memory to store the input value.
     *   Input from the keyboard is initially a sequence of characters; `scanf` converts it based on the format specifier and stores it.
 
 **5. Character Data Type (`char`):**
+* 
     *   Typically used to store single characters (like 'A', 'z', '!', '?').
     *   Size: Usually 1 byte (8 bits).
     *   Range (1 byte):
@@ -240,6 +262,7 @@ int main() {
 **Topic:** Data Types (Format Specifiers, Escape Sequences), Operators (Introduction)
 
 **1. `printf` Format Specifiers (Review/Expansion):**
+* 
     *   `%d`, `%i`: Signed integer.
     *   `%u`: Unsigned integer.
     *   `%ld`: Long signed integer.
@@ -252,6 +275,7 @@ int main() {
     *   `%%`: To print a literal '%' sign.
 
 **2. Escape Sequences:**
+* 
     *   Special character combinations starting with `\` used within strings/character literals to represent characters that are difficult or impossible to type directly or have special meaning.
     *   `\n`: **Newline.** Moves the cursor to the beginning of the next line.
     *   `\t`: **Horizontal Tab.** Moves the cursor to the next tab stop (often every 8 columns, but can vary). Used for alignment.
@@ -308,6 +332,7 @@ This is a single quote: '
 ```
 
 **3. Operators:**
+* 
     *   Symbols that perform operations on data (operands).
     *   **Operand:** The data on which an operator acts.
     *   **Types based on number of operands:**
@@ -321,6 +346,7 @@ This is a single quote: '
         *   Expression statement: `10 + 2;` (Evaluates to 12, but the value is discarded. Legal but often not useful unless it has side effects like `i++;`). `a = 20;` is also an expression statement where the expression has the side effect of assignment.
 
 **4. Assignment Operator (`=`):**
+* 
     *   Binary operator.
     *   Syntax: `LHS = RHS;`
     *   **LHS (Left Hand Side):** Must be a modifiable *lvalue* (typically a variable, representing a memory location).
@@ -361,6 +387,7 @@ This is a single quote: '
         *   The sign of the result usually matches the sign of the first operand (dividend), but this can be implementation-defined in older C standards (C99 onwards specifies it matches the dividend).
 
 **2. `printf` Return Value:**
+* 
     *   `printf` returns the number of characters successfully printed to the screen.
     *   `int i = printf("Pankaj");` -> Prints "Pankaj" and assigns `6` to `i`.
 
@@ -406,6 +433,7 @@ Value of a: 1
 ```
 
 **3. Relational Operators:**
+* 
     *   Used to compare two values. Result is either `1` (true) or `0` (false).
     *   `<` (Less than), `>` (Greater than), `<=` (Less than or equal to), `>=` (Greater than or equal to), `==` (Equal to), `!=` (Not equal to).
     *   **Precedence:**
@@ -414,6 +442,7 @@ Value of a: 1
     *   Relational operators have lower precedence than arithmetic operators. `a + b > c - d` is `(a + b) > (c - d)`.
 
 **4. Logical Operators:**
+* 
     *   Used to combine or modify logical (true/false) values. Operands are typically treated as true if non-zero and false if zero. Result is `1` (true) or `0` (false).
     *   `&&` (Logical AND): Binary. Result is `1` if *both* operands are non-zero (true), otherwise `0`.
     *   `||` (Logical OR): Binary. Result is `1` if *at least one* operand is non-zero (true), otherwise `0`.
@@ -431,6 +460,7 @@ Value of a: 1
 **Topic:** Operators (Logical cont., Bitwise, Ternary), Short-Circuit Evaluation, Pre/Post Increment/Decrement
 
 **1. Logical Operators (Continued):**
+* 
     *   **Short-Circuit Evaluation:**
         *   **`&&` (Logical AND):** If the *first* operand evaluates to false (0), the result is guaranteed to be false (0), so the *second* operand is **not evaluated**.
         *   **`||` (Logical OR):** If the *first* operand evaluates to true (non-zero), the result is guaranteed to be true (1), so the *second* operand is **not evaluated**.
@@ -470,6 +500,7 @@ After ||: a=1, b=5, result=1
 ```
 
 **2. Increment (`++`) and Decrement (`--`) Operators:**
+* 
     *   Unary operators that modify their operand (must be a variable/lvalue).
     *   **Pre-increment (`++var`):** Increments the variable *before* its value is used in the expression. Returns the *incremented* value.
     *   **Post-increment (`var++`):** Increments the variable *after* its value is used in the expression. Returns the *original* value (before increment).
@@ -569,6 +600,7 @@ int main() {
 *Assuming Lecture 8 intended to start Control Flow:*
 
 **1. Flow Control:**
+* 
     *   By default, C programs execute statements sequentially, one after another.
     *   Control flow statements alter this sequential execution.
     *   **Types:**
@@ -580,6 +612,7 @@ int main() {
     *   Allow the program to make decisions.
 
 **3. `if` Statement:**
+* 
     *   Executes a block of code *only if* a specified condition is true (non-zero).
     *   **Syntax:**
         ```c
@@ -658,6 +691,7 @@ End
 *(The slides provided for Lecture 9 focus on Number Systems and Bitwise Operators. This seems misaligned with the lecture title. The notes below cover `if-else` based on the title, assuming the content was intended for this lecture or covered elsewhere.)*
 
 **1. `if-else` Statement:**
+* 
     *   Executes one block of code if a condition is true, and a *different* block if the condition is false.
     *   Provides an alternative path of execution.
     *   **Syntax:**
@@ -695,6 +729,7 @@ int main() {
 ```
 
 **2. `if-else if-else` Ladder (or Chain):**
+* 
     *   Used to check multiple conditions sequentially.
     *   The first condition that evaluates to true has its corresponding block executed, and the rest of the ladder is skipped.
     *   The final `else` (optional) acts as a default case if none of the preceding `if` or `else if` conditions are true.
@@ -737,6 +772,7 @@ int main() {
 ```
 
 **3. Nested `if` Statements:**
+* 
     *   An `if` or `if-else` statement can be placed inside another `if` or `else` block.
     *   Used for more complex decision-making structures.
     *   **Dangling Else Problem:** An `else` clause always associates with the *nearest* preceding `if` that doesn't already have an `else`, unless braces `{}` dictate otherwise.
@@ -1251,6 +1287,7 @@ int main() {
 **Topic:** Control Flow Statements (Selection: `if`, `if-else`, `if-else if-else`)
 
 **1. Recap: Flow Control Statements**
+* 
     *   Alter the default sequential execution.
     *   **Categories:**
         *   **Selection:** `if`, `if-else`, `if-else if-else`, `switch`.
@@ -1258,6 +1295,7 @@ int main() {
         *   **Jump:** `continue`, `break`, `goto`, `return`, `exit`.
 
 **2. Selection Statements - `if`**
+* 
     *   Executes code block if condition is true (non-zero).
     *   **Syntax:**
         ```c
@@ -1308,6 +1346,7 @@ int main() {
 ```
 
 **3. Condition Evaluation in `if`:**
+* 
     *   Any non-zero value is TRUE.
     *   Zero value is FALSE.
     *   `if (expression)`: The expression is evaluated.
@@ -1319,6 +1358,7 @@ int main() {
         *   `if (--i)`: Decrements `i` *first*, then uses the *new* value as the condition. If the new value is 0, condition is false.
 
 **4. `if-else` Statement:**
+* 
     *   Provides two alternative paths.
     *   **Syntax:**
         ```c
@@ -1331,6 +1371,7 @@ int main() {
     *   The `else` block executes only if the `if` condition is false.
 
 **5. `if-else if-else` Ladder:**
+* 
     *   Handles multiple mutually exclusive conditions.
     *   Checks conditions sequentially. Executes the block for the *first* true condition found and skips the rest.
     *   The final `else` is the default case if none of the above conditions are met.
@@ -1374,6 +1415,7 @@ int main() {
 **Topic:** Control Flow Statements (Ternary Operator, Loops - `for`)
 
 **1. Ternary Operator (`?:`)**
+* 
     *   A shorthand for simple `if-else` statements that produce a value.
     *   The only ternary operator in C.
     *   **Syntax:** `condition ? expression_if_true : expression_if_false`
@@ -1407,10 +1449,12 @@ int main() {
         ```
 
 **2. Iterative Statements (Loops):**
+* 
     *   Used to repeat a block of code multiple times.
     *   Types: `for`, `while`, `do-while`.
 
 **3. `for` Loop:**
+* 
     *   Typically used when the number of iterations is known or can be determined beforehand.
     *   **Syntax:**
         ```c
@@ -1475,6 +1519,7 @@ int main() {
 **Topic:** Control Flow Statements (`for` loop variations)
 
 **1. `for` Loop Flexibility:**
+* 
     *   Any of the three expressions (initialization, condition, update) in a `for` loop are **optional**.
     *   **Omitting Initialization:** Can be done if the loop variable is initialized before the loop.
         ```c
@@ -1500,6 +1545,7 @@ int main() {
     *   **Omitting All:** `for ( ; ; ) { /* ... */ }` is a common way to write an infinite loop.
 
 **2. Comma Operator in `for` Loop:**
+* 
     *   The comma operator (`,`) allows multiple expressions to be evaluated sequentially within the initialization or update parts. The value of the entire comma-separated expression is the value of the *last* expression.
     *   **Example:**
         ```c
@@ -1629,6 +1675,7 @@ int main() {
 **Topic:** Control Flow Statements (Nested Loops, `while` loop)
 
 **1. Nested Loops:**
+* 
     *   A loop placed inside the body of another loop.
     *   The inner loop executes completely for *each* iteration of the outer loop.
     *   **Example:** Print a 3x4 grid of coordinates.
@@ -1656,6 +1703,7 @@ int main() {
     *   **Complexity/Number of Executions:** If the outer loop runs N times and the inner loop runs M times for each outer iteration, the inner loop's body executes N * M times.
 
 **2. Time Complexity Analysis (Basic Examples):**
+* 
     *   `for (i=1; i<=n; i++) { for (j=1; j<=3; j++) { printf("P"); } }` -> Inner body runs n * 3 = O(n) times.
     *   `for (i=1; i<=n; i++) { for (j=1; j<=n; j++) { printf("P"); } }` -> Inner body runs n * n = O(n²) times.
     *   `for (i=1; i<=n; i++) { for (j=1; j<=n; j=j*2) { printf("P"); } }` -> Inner loop runs ~log₂(n) times. Total: O(n log n).
@@ -1664,6 +1712,7 @@ int main() {
     *   `for (i=1; i<=n; i++) { for (j=1; j<=i; j++) { printf("P"); } }` -> Inner loop runs 1, 2, 3, ..., n times. Total = 1 + 2 + ... + n = n(n+1)/2 = O(n²).
 
 **3. `while` Loop:**
+* 
     *   Repeats a block of code *as long as* a condition remains true.
     *   Condition is checked *before* each potential iteration (pre-test loop).
     *   Used when the number of iterations is not known in advance, but depends on a condition becoming false.
@@ -1724,6 +1773,7 @@ int main() {
 **Topic:** Control Flow Statements (`do-while`, Loop Comparison, `break`, `continue`)
 
 **1. `do-while` Loop:**
+* 
     *   Similar to `while`, but the condition is checked *after* the loop body executes.
     *   This guarantees the loop body runs **at least once**, even if the condition is initially false.
     *   Post-test loop.
@@ -1775,6 +1825,7 @@ After loops, i=11
 ```
 
 **2. Choosing Between Loops (`for`, `while`, `do-while`):**
+* 
     *   **`for`:** Best when the number of iterations is known or easily calculated beforehand (e.g., iterating 10 times, iterating through an array).
     *   **`while`:** Best when iteration depends on a condition becoming false, and the condition should be checked *before* the first iteration (e.g., reading file until end-of-file, processing user input until a specific value is entered). Pre-test loop.
     *   **`do-while`:** Best when the loop body *must* execute at least once, regardless of the condition (e.g., menu-driven programs where the menu is shown at least once). Post-test loop.
@@ -1783,6 +1834,7 @@ After loops, i=11
     *   Alter the normal flow of loops (and `switch` statements).
 
 **4. `continue` Statement:**
+* 
     *   Skips the *rest of the current iteration* of the loop body.
     *   Execution jumps immediately to the loop's *update* expression (in `for` loops) or the *condition* check (in `while` and `do-while` loops) for the *next* iteration.
     *   Does **not** terminate the loop entirely.
@@ -1813,6 +1865,7 @@ Printing 1 to 10, skipping multiples of 3:
 ```
 
 **5. `break` Statement:**
+* 
     *   Terminates the *innermost* loop (`for`, `while`, `do-while`) or `switch` statement immediately.
     *   Execution jumps to the first statement *after* the terminated loop or switch.
 
@@ -1849,6 +1902,7 @@ Loop finished after break at i=3
 **Topic:** Control Flow Statements (`switch` statement)
 
 **1. `switch` Statement:**
+* 
     *   A multi-way selection statement.
     *   Compares the value of an *expression* against multiple constant *case labels*.
     *   Executes the block of code associated with the matching case.
@@ -1879,6 +1933,7 @@ Loop finished after break at i=3
     ```
 
 **3. Key Rules and Behavior:**
+* 
     *   **Expression:** Must evaluate to an integer value (including `char`, as chars are internally integers). Floats/doubles are not allowed directly.
     *   **`case` Labels:** Must be *constant integer expressions* (literals like `1`, `'A'`, or compile-time constants like `10+3*4`). Variables (like `case a:`) are **not allowed**. No duplicate case labels are allowed within the same switch.
     *   **`break` Statement:** Crucial for separating cases. If `break` is omitted, execution "falls through" to the *next* case's statements until a `break` is encountered or the `switch` block ends. This fall-through behavior can be useful but is often a source of bugs if unintended.
@@ -1973,11 +2028,13 @@ Well done
 *(The slides provided for Lecture 17 cover `switch` statement details and Armstrong/Strong numbers, which seems like a continuation of Control Flow rather than Recursion. The notes below introduce Recursion based on the lecture title, assuming the content was intended for this or a later lecture.)*
 
 **1. Recursion:**
+* 
     *   A process where a function calls itself, either directly or indirectly.
     *   A problem-solving technique where the solution to a larger problem depends on solutions to smaller instances of the *same* problem.
     *   **Analogy:** Looking up a word in a dictionary might require looking up other words within its definition (recursive lookup). Asking a question in a chain until someone knows the answer.
 
 **2. Key Components of a Recursive Function:**
+* 
     *   **Base Case(s):**
         *   The simplest instance(s) of the problem that can be solved directly, without further recursion.
         *   Stops the chain of recursive calls.
@@ -1988,12 +2045,14 @@ Well done
         *   Combines the result of the recursive call with some computation to solve the original (larger) instance.
 
 **3. How Recursion Works (Stack):**
+* 
     *   Each time a function is called (including recursive calls), a new *activation record* (or stack frame) is pushed onto the program's call stack.
     *   This record stores the function's local variables, parameters, and the return address (where to resume execution after the call finishes).
     *   When a function returns, its activation record is popped off the stack.
     *   In recursion, the stack grows with each recursive call and shrinks as the calls return, starting from the base case.
 
 **4. Example: Factorial (n!)**
+* 
     *   n! = n * (n-1) * (n-2) * ... * 1
     *   0! = 1 (by definition)
     *   **Recursive Definition:**
@@ -2068,6 +2127,7 @@ Factorial of 4 is 24
 *(The slides provided for Lecture 18 introduce Functions and related concepts like compilation steps, which seems more appropriate for "Functions and Storage - Part I". The notes below follow the slide content.)*
 
 **1. Functions:**
+* 
     *   A block of code designed to perform a specific task.
     *   **Purpose:**
         *   **Code Reusability:** Write code once, call it multiple times from different parts of the program.
@@ -2078,6 +2138,7 @@ Factorial of 4 is 24
         *   **User-Defined Functions:** Created by the programmer.
 
 **2. Function Definition:**
+* 
     *   The actual code that implements the function's task.
     *   **Syntax:**
         ```c
@@ -2093,17 +2154,20 @@ Factorial of 4 is 24
     *   `return value;`: Sends a value back to the caller. The `value` must match the `return_type`.
 
 **3. Function Call:**
+* 
     *   Executing a function.
     *   **Syntax:** `function_name(argument_list);`
     *   `argument_list`: Comma-separated list of values passed to the function. These are *actual arguments*. The values are copied to the corresponding formal parameters.
 
 **4. Function Declaration (Prototype):**
+* 
     *   Tells the compiler about a function *before* it's defined or called. Specifies the function's name, return type, and the types of its parameters.
     *   **Syntax:** `return_type function_name(parameter_type_list);` (Parameter names are optional here).
     *   **Necessity:** Required if a function is called *before* its definition appears in the source file, or if the definition is in a different file. Including header files (like `stdio.h`) provides declarations for library functions.
     *   **Forward Declaration:** A declaration placed before any calls to the function within the same file.
 
 **5. Compilation & Linking Process:**
+* 
     *   **Source Code (`.c`):** Human-readable C code.
     *   **Preprocessor:** Handles directives like `#include` (pastes header file content) and `#define` (macro substitution). Output is still C code (`.i` file, usually temporary).
     *   **Compiler:** Translates the preprocessed C code into Assembly language (`.s` file, usually temporary).
@@ -2146,6 +2210,7 @@ int add(int x, int y) {
 **Topic:** Functions & Storage Classes (Function Calls, Call by Value, Storage Classes Intro)
 
 **1. Function Call Mechanism:**
+* 
     *   When `main` calls `add(a, b)`:
         1.  Values of actual arguments (`a`, `b`) are copied into the formal parameters (`x`, `y`) of the called function (`add`).
         2.  Control transfers to the beginning of the `add` function.
@@ -2156,6 +2221,7 @@ int add(int x, int y) {
         7.  Local variables of `add` (`x`, `y`, `temp`) are destroyed (stack frame is popped).
 
 **2. Call by Value:**
+* 
     *   The default mechanism for passing arguments in C.
     *   The *values* of the actual arguments are copied into the formal parameters.
     *   The called function works with *copies* of the original data.
@@ -2194,6 +2260,7 @@ In main (after swap): a=10, b=20
 *(To actually swap values in `main`, we need to use pointers - Call by Reference/Address, covered later).*
 
 **3. Storage Classes:**
+* 
     *   Determine the *scope*, *lifetime*, *default initial value*, and *storage location* of a variable or function.
     *   **Keywords:** `auto`, `register`, `static`, `extern`.
     *   **Key Concepts:**
@@ -2207,6 +2274,7 @@ In main (after swap): a=10, b=20
         *   **Storage Location:** Where the variable is stored in memory (e.g., Stack, Data Segment, Registers).
 
 **4. Memory Layout (Conceptual):**
+* 
     *   **Stack:** Used for local variables (`auto`, `register`), function parameters, return addresses. Grows and shrinks as functions are called and return. Memory is allocated/deallocated automatically.
     *   **Heap:** Used for dynamic memory allocation (`malloc`, `calloc`). Managed explicitly by the programmer.
     *   **Data Segment:**
@@ -2221,6 +2289,7 @@ In main (after swap): a=10, b=20
 **Topic:** Functions & Storage Classes (`auto`, `register`, `static` variables)
 
 **1. `auto` Storage Class:**
+* 
     *   The **default** storage class for variables declared *inside* a block or function.
     *   The keyword `auto` is rarely used explicitly because it's the default. `int a;` inside a function is implicitly `auto int a;`.
     *   **Scope:** Block scope (visible only within the `{...}` where declared).
@@ -2263,6 +2332,7 @@ int main() {
 ```
 
 **2. `register` Storage Class:**
+* 
     *   A **request** (hint) to the compiler to store the variable in a CPU register instead of RAM (stack).
     *   **Goal:** Faster access, as registers are much faster than memory.
     *   **Compiler's Decision:** The compiler might ignore the request (e.g., if no registers are available, or if optimization makes it unnecessary). If ignored, the variable defaults to `auto`.
@@ -2296,6 +2366,7 @@ int main() {
 ```
 
 **3. `static` Storage Class (Inside Functions/Blocks):**
+* 
     *   Used for local variables declared inside a function or block.
     *   **Scope:** Block scope (like `auto`). Only accessible within the block where declared.
     *   **Lifetime:** **Entire program execution.** The variable is created and initialized *once* (when the program starts or the first time the function is called, depending on context) and persists between function calls. It is *not* destroyed when the block/function exits.
@@ -2338,6 +2409,7 @@ int main() {
 **Topic:** Functions & Storage Classes (`static` global, `extern`)
 
 **1. Global Variables:**
+* 
     *   Variables declared *outside* of any function.
     *   **Scope:** File scope (by default). Visible from the point of declaration to the end of the file.
     *   **Lifetime:** Entire program execution.
@@ -2381,6 +2453,7 @@ Inside main (after func2): global_var = 16
 ```
 
 **2. `static` Storage Class (Global Variables/Functions):**
+* 
     *   When applied to a global variable or a function definition, `static` restricts its **linkage** to the current file (*internal linkage*).
     *   **Effect:** The static global variable or static function is only visible/accessible *within the source file where it is defined*. It cannot be accessed directly by code in other source files (even if declared with `extern` there).
     *   **Use Case:** To create "private" global variables or helper functions for a specific source file (module), preventing naming conflicts with other files.
@@ -2426,6 +2499,7 @@ int main() {
 ```
 
 **3. `extern` Storage Class:**
+* 
     *   Used to **declare** a global variable or function that is *defined* elsewhere (typically in another source file).
     *   It tells the compiler "this variable/function exists, but its definition/memory allocation is in another file; the linker will find it."
     *   It does *not* allocate memory. It's just a declaration.
@@ -2462,12 +2536,14 @@ int main() {
 **Topic:** Recursion (Examples: Print Stars, Sum of Digits, Print Numbers)
 
 **1. Recursion Design Principles:**
+* 
     *   **Identify the Base Case:** What is the simplest input for which the answer is known directly, without needing further recursion? (e.g., `n=1` for printing stars, `n` is single digit for sum).
     *   **Identify the Recursive Step:** How can the problem for input `n` be expressed in terms of the *same problem* for a smaller input (e.g., `n-1`, `n/10`)?
     *   **Ensure Progress:** Each recursive call must move closer to the base case.
     *   **Combine Results:** (If necessary) How to combine the result of the recursive call with the work done at the current step.
 
 **2. Example 1: Print `n` Stars**
+* 
     *   **Problem:** Print `n` asterisks (`*`).
     *   **Base Case:** If `n=1`, print one star.
     *   **Recursive Step:** To print `n` stars, print one star, then recursively print `n-1` stars.
@@ -2523,6 +2599,7 @@ int main() {
 ```
 
 **3. Example 2: Sum of Digits**
+* 
     *   **Problem:** Calculate the sum of the digits of a non-negative integer `n`.
     *   **Base Case:** If `n` is a single digit (0-9), the sum is `n` itself. (`n >= 0 && n <= 9` or simply `n < 10` for non-negative n).
     *   **Recursive Step:** The sum of digits of `n` is `(last digit of n) + (sum of digits of remaining number)`.
@@ -2558,6 +2635,7 @@ int main() {
 ```
 
 **4. Example 3: Print Numbers (Illustrating Call Stack)**
+* 
     *   **Head Recursion:** Work is done *before* the recursive call.
     *   **Tail Recursion:** Work is done *after* the recursive call returns.
 
@@ -3236,7 +3314,8 @@ int main() {
         *   `static a` (in f) is now 5.
     *   Back in `main`: `printf("%d\t%d", a, b)`. Prints `main`'s `a` (5) and `main`'s `b` (1).
     *   Total Output: `5\t7\n5\t7\n5\t1`
-*   **Answer:** Matches option A on the next slide: `-2 6\n-7 6\n 5 1`. *(Self-correction: The slide trace shows different values. Let's re-trace using the slide's logic if possible. The slide trace seems to have `a = b++` result in `a=6` and `b=6`, and `b=b++` result in `b=7`. This implies `a=b++` behaves like `a=++b`. Let's try that.)*
+*   **Answer:** Matches option A on the next slide: `-2 6\n-7 6\n 5 1`. 
+* *(Self-correction: The slide trace shows different values. Let's re-trace using the slide's logic if possible. The slide trace seems to have `a = b++` result in `a=6` and `b=6`, and `b=b++` result in `b=7`. This implies `a=b++` behaves like `a=++b`. Let's try that.)*
     *   **Re-analysis (Assuming `a=b++` acts like `a=++b`, and `b=b++` acts like `b=++b`):**
         *   `main` starts: `static a = 2`, `int b = 1`.
         *   `f()` call 1:
@@ -3264,25 +3343,30 @@ Okay, continuing with the notes for the remaining lectures based on the provided
 **Topic:** Arrays & Pointers (Introduction to Arrays)
 
 **1. Addresses:**
+* 
     *   **Absolute Address:** The actual, physical (or virtual) memory address (e.g., `A-106, Krishna Nagar, Mathura (U.P.)`). Unique within the system's memory space.
     *   **Relative Address:** An address specified relative to a known base address (e.g., "3rd house from the corner"). Used internally by programs for array indexing, struct members, etc. Easier for the linker/loader to manage.
     *   Arrays primarily use relative addressing internally, based on the starting address of the array.
 
 **2. Address-of Operator (`&`):**
+* 
     *   A unary operator that returns the memory address of its operand.
     *   Operand must be an *lvalue* (something that has a memory location, like a variable).
     *   `&a` gives the memory address where the variable `a` is stored (e.g., 1042).
 
 **3. Dereference Operator (`*`) (Value-at Operator):**
+* 
     *   A unary operator that takes an address (pointer) as its operand.
     *   It returns the *value stored at that memory address*.
     *   `*(&a)` means "the value at the address of `a`", which is equivalent to just `a`.
 
 **4. Why Arrays?**
+* 
     *   Consider needing to store marks for 50 or 500 students. Declaring individual variables (`m1`, `m2`, ... `m500`) is impractical.
     *   Arrays allow storing multiple values of the *same data type* under a single name, accessed using an index.
 
 **5. Array Definition:**
+* 
     *   A collection of elements of the **same data type** stored in **contiguous (sequential) memory locations**.
     *   Instead of `int a, b, c;` (variables potentially scattered in memory), use `int a[3];` (3 integer elements stored one after another).
     *   `int a[3];` declares `a` as a group of 3 elements, each of type `int`.
